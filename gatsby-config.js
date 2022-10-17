@@ -10,13 +10,13 @@ module.exports = {
     // You can overwrite values here that are used for the SEO component
     // You can also add new values here to query them like usual
     // See all options: https://github.com/LekoArts/gatsby-themes/blob/main/themes/gatsby-theme-minimal-blog/gatsby-config.js
-    siteTitle: `Minimal Blog`,
-    siteTitleAlt: `Minimal Blog - Gatsby Theme`,
-    siteHeadline: `Minimal Blog - Gatsby Theme from @lekoarts`,
-    siteUrl: `https://minimal-blog.lekoarts.de`,
-    siteDescription: `Typography driven, feature-rich blogging theme with minimal aesthetics. Includes tags/categories support and extensive features for code blocks such as live preview, line numbers, and line highlighting.`,
+    siteTitle: `DeComVo`,
+    siteTitleAlt: `Decolonized Community Voices`,
+    siteHeadline: `Decolonized Community Voices`,
+    siteUrl: `https://decomvo.com`,
+    siteDescription: `Decolonized Community Voices || Making decolonized voices heard!`,
     siteImage: `/banner.jpg`,
-    author: `@lekoarts_de`,
+    author: `Adina Kendelbacher`,
   },
   plugins: [
     {
@@ -25,22 +25,26 @@ module.exports = {
       options: {
         navigation: [
           {
-            title: `Blog`,
+            title: `Posts`,
             slug: `/blog`,
           },
           {
-            title: `About`,
+            title: `Über Uns`,
             slug: `/about`,
           },
+          {
+            title: `Kooperationen`,
+            slug: `/kooperation`,
+          },
+          {
+            title: 'Kontakt',
+            slug: `/kontakt`,
+          }
         ],
         externalLinks: [
           {
-            name: `Twitter`,
-            url: `https://twitter.com/lekoarts_de`,
-          },
-          {
-            name: `Homepage`,
-            url: `https://www.lekoarts.de?utm_source=minimal-blog&utm_medium=Starter`,
+            name: `Startseite`,
+            url: `https://decomvo.com`,
           },
         ],
       },
@@ -58,10 +62,10 @@ module.exports = {
         short_name: `minimal-blog`,
         description: `Typography driven, feature-rich blogging theme with minimal aesthetics. Includes tags/categories support and extensive features for code blocks such as live preview, line numbers, and code highlighting.`,
         start_url: `/`,
-        background_color: `#fff`,
+        background_color: `#220B55`,
         // This will impact how browsers show your PWA/website
         // https://css-tricks.com/meta-theme-color-and-trickery/
-        // theme_color: `#6B46C1`,
+        theme_color: `#6B46C1`,
         display: `standalone`,
         icons: [
           {
