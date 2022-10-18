@@ -43,8 +43,8 @@ module.exports = {
         ],
         externalLinks: [
           {
-            name: `Startseite`,
-            url: `https://decomvo.com`,
+            name: `🏠`,
+            url: `https://decomvo.web.app`,
           },
         ],
       },
