@@ -13,7 +13,7 @@ module.exports = {
     siteTitle: `DeComVo`,
     siteTitleAlt: `Decolonized Community Voices`,
     siteHeadline: `Decolonized Community Voices`,
-    siteUrl: `https://decomvo.com`,
+    siteUrl: `https://decomvo.web.app`,
     siteDescription: `Decolonized Community Voices || Making decolonized voices heard!`,
     siteImage: `/banner.jpg`,
     author: `Adina Kendelbacher`,
