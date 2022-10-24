@@ -2,29 +2,23 @@ import Layout from '@lekoarts/gatsby-theme-minimal-blog/src/components/layout'
 import { graphql, Link } from 'gatsby'
 import React from 'react'
 
-export default function index( { data }) {
-  const allBlogs = data.allNotion.edges.slice(0,3)
-  return (
+export default function Artikel( {data }) {
+  const allBlogs = data.allNotion.edges
+
+    return (
     <Layout>
-    <div>
-        <h1>Decolonized Community Voices</h1>
-        <h4>Making decolonized voices heard!</h4>
-    </div>
-    <hr style={{margin: '200px 0', borderColor: 'white'}} />
-    <div>
-      <h2>Artikel!</h2>
-      {
-        allBlogs.map( p => (
+        <h1>Artikel!</h1>
+        {
+          allBlogs.map( p => (
             <div key={p.node.id} >
-              <Link to={"/artikel/" + p.node.title.split(" ").join("-").toLowerCase()}><h3>{p.node.raw.icon.emoji} {p.node.title}</h3></Link>
+              <Link to={p.node.title.split(" ").join("-").toLowerCase()}><h3>{p.node.raw.icon.emoji} {p.node.title}</h3></Link>
               <div>
                 <p>{p.node.childMarkdownRemark.excerpt}</p>
               </div>
             </div>
           )
           )
-      }
-    </div>
+        }
     </Layout>
   )
 }
