@@ -1,11 +1,12 @@
 import Layout from '@lekoarts/gatsby-theme-minimal-blog/src/components/layout'
 import { graphql, Link } from 'gatsby'
 import React from 'react'
+import StyledLayout from '../components/StyledLayout'
 
 export default function index( { data }) {
   const allBlogs = data.allNotion.edges.slice(0,3)
   return (
-    <Layout>
+    <StyledLayout>
     <div>
         <h1>Decolonized Community Voices</h1>
         <h4>Making decolonized voices heard!</h4>
@@ -25,7 +26,18 @@ export default function index( { data }) {
           )
       }
     </div>
-    </Layout>
+    </StyledLayout>
+  )
+}
+
+export function Head() {
+  return(
+    <>
+      <title>DeComVo</title>
+      <meta name='description' content='Decolonized Community Voices || Making decolonized voices heard!' />
+      <meta name='siteUrl' content='https://decomvo.web.app' />
+      <meta name='siteUrl' content='https://decomvo.web.app' />
+    </>
   )
 }
 

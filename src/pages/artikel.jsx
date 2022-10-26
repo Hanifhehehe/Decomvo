@@ -23,6 +23,17 @@ export default function Artikel( {data }) {
   )
 }
 
+export function Head() {
+  return(
+    <>
+      <title>DeComVo || Artikel</title>
+      <meta name='description' content='Decolonized Community Voices || Making decolonized voices heard!' />
+      <meta name='siteUrl' content='https://decomvo.web.app' />
+      <meta name='siteUrl' content='https://decomvo.web.app' />
+    </>
+  )
+}
+
 export const query = graphql`
   query AllArtikel {
     allNotion(

@@ -12,4 +12,17 @@ const kooperation = () => {
         </Layout>
     )
 }
+
+export function Head() {
+  return(
+    <>
+      <title>DeComVo || Kooperationen</title>
+      <meta name='description' content='Decolonized Community Voices || Making decolonized voices heard!' />
+      <meta name='siteUrl' content='https://decomvo.web.app' />
+      <meta name='siteUrl' content='https://decomvo.web.app' />
+    </>
+  )
+}
+
+
 export default kooperation

@@ -8,4 +8,15 @@ const NotFound = () => (
   </Layout>
 )
 
+export function Head() {
+  return(
+    <>
+      <title>DeComVo || 404 Not Found!</title>
+      <meta name='description' content='Decolonized Community Voices || Making decolonized voices heard!' />
+      <meta name='siteUrl' content='https://decomvo.web.app' />
+      <meta name='siteUrl' content='https://decomvo.web.app' />
+    </>
+  )
+}
+
 export default NotFound

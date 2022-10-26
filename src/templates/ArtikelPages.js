@@ -19,7 +19,18 @@ export default function ArtikelPages({ data }) {
     </Layout>
   )
 }
- 
+
+export function Head( { data }) {
+  return(
+    <>
+      <title>{data.notion.title}</title>
+      <meta name='description' content='Decolonized Community Voices || Making decolonized voices heard!' />
+      <meta name='siteUrl' content='https://decomvo.web.app' />
+      <meta name='siteUrl' content='https://decomvo.web.app' />
+    </>
+  )
+}
+
 export const query = graphql`
     query GetPage($id: String) {
     notion(id: {eq: $id}) {
